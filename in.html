@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> 兔子规律计算器</title>
+	</head>
+	<body>
+		结果：
+		<p style="background-color: #FF5612;overflow:scroll;" id="jieguo">1,</p>
+	<button id="cont">next</button>		
+<script>
+		var m,n,k;
+		m=0;
+		n=1;
+		document.getElementById("cont").onclick=function(){
+		k=m+n;
+		m=n;
+		n=k;
+		document.getElementById("jieguo").innerHTML += k+","
+		
+}</script>
+</body></html>
